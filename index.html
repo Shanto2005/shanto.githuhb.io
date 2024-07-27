@@ -1,0 +1,245 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/mmenu-light.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header_wrapper">
+                <div class="headerLogo">
+                    <a href="index.html">Robiul Islam</a>
+                </div>
+                <div class="headerMenu">
+                    <div class="dmenu">
+                        <ul class="mainMenu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Skills</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact Me</a></li>
+                        </ul>
+                    </div>
+                    <div class="mmenu">
+                        <a href="#porfolio" class="mmenuBtn"><i class="fa-solid fa-bars"></i></a>
+                        <nav id="porfolio">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Skills</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Contact Me</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="moodCnageBtn">
+                        <li class="moodChange" id="darkMood"><button><i class="fa-regular fa-moon"></i></button></li>
+                        <li class="moodChange" id="lightMood"><button><i class="fa-solid fa-sun"></i></button></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="container">
+            <div class="bannerContent">
+                <h1>I'm Robiul</h1>
+                <h6>Diploma in Engineering in CST at BCIEI</h6>
+                <p>Currently working as a Web Technologies Engineer in <a class="textLink" href="https://dusrasoft.com/">DUSRA Soft Ltd</a> and studying B.Sc. in Computer Science and technology at BCI Engineering Institute.</p>
+                <a class="contactMeBTn" href="#contactMe">Contact Me</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutMe" id="aboutMe">
+        <div class="container">
+            <div class="sectionHeading">
+                <h2 class="h2">About Me</h2>
+                <p>My Introduction</p>
+            </div>
+            <div class="amContent">
+                <div class="myLeftContent">
+                    <img src="assets/images/me.jpg" alt="">
+                </div>
+                <div class="myRightContent">
+                    <p>I love technologies from my childhood and that's why I am in the IT field. Proudly working for 4 years as a Web Technologies Engineer.</p>
+                    <div id="aboutMeCounter">
+                        <div class="item">
+                           <h1 class="count" data-number="2" ></h1>
+                           <span class="text">Years <br> experience.</span>
+                        </div>
+                        <div class="item">
+                           <h1 class="count" data-number="5" ></h1>
+                           <span class="text">Projects <br> completed.</span>
+                        </div>
+                        <div class="item">
+                           <h1 class="count" data-number="1"></h1>
+                           <span class="text">Companies <br> worked.</span>
+                        </div>                 
+                    </div>
+                    <a class="contactMeBTn" href="#contactMe">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mySkills" id="mySkills">
+        <div class="container">
+            <div class="sectionHeading">
+                <h2 class="h2">Skills</h2>
+                <p>Field of Knowledge</p>
+            </div>
+            <div class="skillsWrapper">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#SkillOne" aria-expanded="true" aria-controls="collapseOne">
+                          <h6 class="h6">Frontend Developer</h6>
+                          <p>More than 2 years</p>
+                        </button>
+                      </h2>
+                      <div id="SkillOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="progresContent">
+                                <div class="progressTittle"><Span>Html</Span></div>
+                                <div class="progress">
+                                    <div class="progressNumber progressHtml" data-done="90">
+                                        90%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progresContent">
+                                <div class="progressTittle"><Span>Css</Span></div>
+                                <div class="progress">
+                                    <div class="progressNumber progressCss" data-done="80">
+                                        80%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progresContent">
+                                <div class="progressTittle"><Span>Js</Span></div>
+                                <div class="progress">
+                                    <div class="progressNumber progressJs" data-done="60">
+                                        60%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SkillTwo" aria-expanded="false" aria-controls="collapseTwo">                          
+                            <h6 class="h6">WordPress Developer</h6>
+                            <p>More than 4 years</p>
+                        </button>
+                      </h2>
+                      <div id="SkillTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="progresContent">
+                                <div class="progressTittle"><Span>Js</Span></div>
+                                <div class="progress">
+                                    <div class="progressNumber progressWordpress" data-done="90">
+                                        90%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="servicesSec">
+        <div class="container">
+            <div class="sectionHeading">
+                <h2 class="h2">Services</h2>
+                <p>Magic For You</p>
+            </div>
+            <div class="servicesWrapper">
+                <div class="servicesCard">
+                    <h3 class="h3 modalTittle">Hosting Setup</h3>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        View More<i class="fa-solid fa-angles-right"></i>
+                    </button>
+                    <ul class="serviceContent">
+                        <li>Secured Hosting</li>
+                        <li>Ready To Go</li>
+                        <li>Deploy Website</li>
+                        <li>Install Software</li>
+                    </ul>
+                </div>
+                <div class="servicesCard">
+                    <h3 class="h3 modalTittle">Frontend Design with HTML, CSS and JS</h3>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        View More<i class="fa-solid fa-angles-right"></i>
+                    </button>
+                    <ul class="serviceContent">
+                        <li>Responsive Design</li> 
+                        <li>User Friendly</li> 
+                        <li>SEO Friendly</li> 
+                        <li>Professional Website</li> 
+                        <li>In Your Budget</li> 
+                    </ul>
+                </div>
+                <div class="servicesCard">
+                    <h3 class="h3 modalTittle">WordPress Website Design</h3>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        View More<i class="fa-solid fa-angles-right"></i>
+                    </button>
+                    <ul class="serviceContent">
+                        <li>Secured Website</li>
+                        <li>Responsive Design</li>
+                        <li>User Friendly</li> 
+                        <li>SEO Friendly</li> 
+                        <li>Visually Attractive</li>
+                        <li>Optimized Properly</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- //serices Card Modal -->
+    <div class="modal fade servicesModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mmenu-light.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/unpkg.com_isotope-layout@3.0.6_dist_isotope.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

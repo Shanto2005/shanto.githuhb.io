@@ -1,0 +1,688 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../web-fonts/Ubuntu-Bold.woff2") format("woff2"), url("../web-fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../web-fonts/Ubuntu-Medium.woff2") format("woff2"), url("../web-fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../web-fonts/Ubuntu-Regular.woff2") format("woff2"), url("../web-fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../web-fonts/Poppins-ExtraBold.woff2") format("woff2"), url("../web-fonts/Poppins-ExtraBold.woff") format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../web-fonts/Poppins-Medium.woff2") format("woff2"), url("../web-fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../web-fonts/Poppins-Bold.woff2") format("woff2"), url("../web-fonts/Poppins-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../web-fonts/Poppins-Regular.woff2") format("woff2"), url("../web-fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../web-fonts/Poppins-SemiBold.woff2") format("woff2"), url("../web-fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Signika";
+  src: url("../web-fonts/Signika-Bold.woff2") format("woff2"), url("../web-fonts/Signika-Bold.woff") format("woff");
+  font-weight: 700;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 600;
+  font-family: "Ubuntu";
+  color: #000;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #6d6a7c;
+  background-color: #fff;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h1,
+.h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  h1,
+  .h1 {
+    font-size: 48px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+@media only screen and (min-width: 576px) {
+  h2,
+  .h2 {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h2,
+  .h2 {
+    font-size: 36px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=submit],
+[type=number],
+[type=file],
+textarea,
+select {
+  border: 1px solid #3d5779;
+  padding: 25px 15px;
+  margin-bottom: 12px;
+  width: 100%;
+  border-radius: 0px;
+  height: 42px;
+  background-color: #fff;
+  color: #0d1931;
+  outline-offset: 0px;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #6d6a7c;
+  border: 1px solid #6d6a7c;
+}
+@media only screen and (min-width: 1200px) {
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=tel],
+  input[type=url],
+  input[type=search],
+  input[type=submit],
+  [type=number],
+  [type=file],
+  textarea,
+  select {
+    font-size: 17px;
+  }
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
+input[type=search]:focus,
+input[type=submit]:focus,
+[type=number]:focus,
+[type=file]:focus,
+textarea:focus,
+select:focus {
+  border-color: #6e57e0;
+}
+input[type=text]:focus-visible,
+input[type=email]:focus-visible,
+input[type=password]:focus-visible,
+input[type=tel]:focus-visible,
+input[type=url]:focus-visible,
+input[type=search]:focus-visible,
+input[type=submit]:focus-visible,
+[type=number]:focus-visible,
+[type=file]:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: unset;
+}
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=url]::-moz-placeholder, input[type=search]::-moz-placeholder, input[type=submit]::-moz-placeholder, [type=number]::-moz-placeholder, [type=file]::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  font-size: 14px;
+  color: #6d6a7c;
+}
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder,
+input[type=tel]::placeholder,
+input[type=url]::placeholder,
+input[type=search]::placeholder,
+input[type=submit]::placeholder,
+[type=number]::placeholder,
+[type=file]::placeholder,
+textarea::placeholder,
+select::placeholder {
+  font-size: 14px;
+  color: #6d6a7c;
+}
+@media only screen and (min-width: 1200px) {
+  input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=url]::-moz-placeholder, input[type=search]::-moz-placeholder, input[type=submit]::-moz-placeholder, [type=number]::-moz-placeholder, [type=file]::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+    font-size: 14px;
+  }
+  input[type=text]::placeholder,
+  input[type=email]::placeholder,
+  input[type=password]::placeholder,
+  input[type=tel]::placeholder,
+  input[type=url]::placeholder,
+  input[type=search]::placeholder,
+  input[type=submit]::placeholder,
+  [type=number]::placeholder,
+  [type=file]::placeholder,
+  textarea::placeholder,
+  select::placeholder {
+    font-size: 14px;
+  }
+}
+
+input[type=submit],
+input[type=button],
+button,
+.button {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: unset;
+  transition: 0.4s all;
+  padding: 5px 8px;
+  border: 1 solid;
+  background-color: #6e57e0;
+  color: #fff;
+}
+
+p,
+ul,
+ol,
+table,
+address {
+  margin-bottom: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+.textLink {
+  color: #38bdf8;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.textLink:hover {
+  color: #1278a3;
+}
+
+.sectionHeading {
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .sectionHeading {
+    margin-bottom: 60px;
+  }
+}
+
+.dark {
+  background-color: #001018;
+  color: #b1b1b1;
+}
+.dark .mainMenu li {
+  color: #fff;
+}
+.dark .moodChange button {
+  color: #fff;
+}
+.dark header {
+  box-shadow: #747474 0px 0px 5px 0px, rgba(0, 0, 0, 0.3) 0px 0px 0px 0px;
+}
+.dark .humBorder {
+  background-color: #fff;
+}
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #38bdf8;
+}
+.dark .accordion-item {
+  background-color: unset;
+}
+
+header {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 5px 0px, rgba(0, 0, 0, 0.3) 0px 0px 0px 0px;
+}
+
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.header_wrapper a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.headerLogo {
+  width: 100%;
+  max-width: 200px;
+}
+.headerLogo a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #38bdf8;
+  font-family: "Signika";
+}
+@media only screen and (min-width: 480px) {
+  .headerLogo a {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .headerLogo a {
+    font-size: 30px;
+  }
+}
+
+.mainMenu {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.mainMenu li {
+  font-size: 16px;
+  color: #6d6a7c;
+  transition: 0.3s;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  margin: 0px 10px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.mainMenu li:hover {
+  color: #38bdf8;
+}
+.mainMenu a {
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+.moodChange button {
+  background-color: unset;
+  border: unset;
+  color: #6d6a7c;
+  font-size: 22px;
+  padding: 0;
+}
+
+.headerMenu {
+  display: flex;
+  align-items: center;
+}
+
+.mmenu {
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .mmenu {
+    display: none;
+  }
+}
+.mmenu .mmenuBtn {
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.dmenu {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .dmenu {
+    display: block;
+  }
+}
+
+.humBorder {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #000;
+  margin-right: 20px;
+}
+
+.bannerContent {
+  max-width: 400px;
+  margin: 30px 0px 60px;
+}
+@media only screen and (min-width: 576px) {
+  .bannerContent {
+    margin: 50px 0px 70px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .bannerContent {
+    margin: 70px 0px;
+  }
+}
+@media only screen and (min-width: 972px) {
+  .bannerContent {
+    margin: 100px 0px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .bannerContent {
+    margin: 150px 0px;
+  }
+}
+.bannerContent h6 {
+  font-size: 16px;
+  color: #6d6a7c;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .bannerContent h6 {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+}
+
+.contactMeBTn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #38bdf8;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.amContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .amContent {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.myLeftContent {
+  width: 100%;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .myLeftContent {
+    text-align: end;
+  }
+}
+.myLeftContent img {
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.myRightContent {
+  width: 100%;
+  max-width: 400px;
+}
+
+#aboutMeCounter {
+  display: flex;
+  margin-bottom: 30px;
+}
+#aboutMeCounter .item {
+  max-width: 200px;
+  text-align: center;
+}
+#aboutMeCounter .item:not(:last-child) {
+  margin-right: 30px;
+}
+#aboutMeCounter .count {
+  font-size: 25px;
+}
+#aboutMeCounter .text {
+  font-size: 14px;
+}
+
+.mySkills {
+  margin: 30px 0px 60px;
+}
+@media only screen and (min-width: 576px) {
+  .mySkills {
+    margin: 50px 0px 70px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mySkills {
+    margin: 70px 0px;
+  }
+}
+@media only screen and (min-width: 972px) {
+  .mySkills {
+    margin: 100px 0px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .mySkills {
+    margin: 150px 0px;
+  }
+}
+
+.skillsWrapper .accordion-item {
+  border: unset;
+}
+.skillsWrapper .accordion-button {
+  font-size: 14px;
+  display: block;
+  padding: 10px 10px 10px 20px;
+  background-color: unset;
+  color: #000;
+  font-family: "poppins";
+  font-weight: 500;
+  position: relative;
+  border: unset;
+  box-shadow: unset;
+  color: #6d6a7c;
+}
+.skillsWrapper .accordion-button:focus {
+  box-shadow: unset;
+}
+.skillsWrapper .accordion-button::after {
+  content: "+";
+  transform: unset;
+  background-image: unset;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+.skillsWrapper .accordion-button h6, .skillsWrapper .accordion-button .h6 {
+  font-size: 18px;
+}
+.skillsWrapper .accordion-button p {
+  margin-bottom: 0;
+}
+.skillsWrapper .accordion-button:not(.collapsed)::after {
+  content: "\f068";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  font-size: 20px;
+}
+.skillsWrapper .progresContent {
+  margin: 15px 0px;
+}
+.skillsWrapper .progressTittle {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.skillsWrapper .progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  height: 20px;
+}
+.skillsWrapper .progressNumber {
+  background: linear-gradient(to left, #38bdf8, #38bdf8);
+  box-shadow: 0 3px 3px -5px #38bdf8, 0 2px 5px #38bdf8;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+.dark .accordion-button, .dark .progressTittle {
+  color: #b1b1b1;
+}
+
+.servicesWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
+}
+
+.servicesCard {
+  background-color: #f9f9f9;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0px 40px;
+}
+.servicesCard h3 {
+  font-size: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .servicesCard h3 {
+    font-size: 20px;
+  }
+}
+.servicesCard button {
+  background-color: unset;
+  border: unset;
+  color: #38bdf8;
+  font-size: 16px;
+  padding: 0;
+}
+.servicesCard i {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.serviceContent {
+  display: none;
+  list-style: none;
+}
+.serviceContent li {
+  position: relative;
+}
+.serviceContent li::after {
+  content: "\f14a";
+  position: absolute;
+  font-weight: 400;
+  font-family: "Font Awesome 6 Free";
+  font-size: 14px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #38bdf8;
+}
+
+.dark {
+  background-color: #001018;
+  color: #b1b1b1;
+}
+.dark .mainMenu li {
+  color: #fff;
+}
+.dark .moodChange button {
+  color: #fff;
+}
+.dark header {
+  box-shadow: #747474 0px 0px 5px 0px, rgba(0, 0, 0, 0.3) 0px 0px 0px 0px;
+}
+.dark .humBorder {
+  background-color: #fff;
+}
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #38bdf8;
+}
+.dark .accordion-item {
+  background-color: unset;
+}
+.dark .servicesCard {
+  background-color: #021924;
+}
+.dark .servicesCard h3 {
+  color: #fff;
+}
+.dark .servicesModal .modal-content {
+  background-color: #021924;
+}/*# sourceMappingURL=style.css.map */
